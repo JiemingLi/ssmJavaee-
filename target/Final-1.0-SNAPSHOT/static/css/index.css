@@ -1,0 +1,180 @@
+
+.header{
+	margin-top: 10px;
+	height: 170px;	
+}
+
+.header_l{
+	text-align: center;
+	float: left;
+	width: 192px;
+	height: 63px;
+}
+
+.header_m{
+	float: left;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	margin-left: 20px;
+	list-style: none;
+	display: inline;
+}
+
+.header_m input{
+	width: 125px;
+	height: 30px;
+}
+
+.header_m button{
+	width: 80px;
+	height: 30px;
+}
+
+.header_r{
+	float: right;
+	width: 600px;
+	margin-left: 100px;
+}
+
+.meddle{
+	
+}
+
+.middle_h{
+	text-align: center;
+	width: 800px;
+	height: 300px;
+}
+
+.middle_h ul{
+	width: 560px;
+	margin: auto;
+	margin-left: 150px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.m_l{
+	float: left;
+}
+
+.m_r{
+	float: right;
+}
+
+.nav-search-field {
+	width: 430px !important;
+}
+
+.nav-a-2{
+	width: 110px;
+}
+
+.nav-right1{
+	float: none !important;
+}
+
+
+.wrapper{
+	/*	height: auto !important;*/
+}
+.list-title{
+	margin: 0 0 0 20px;
+	height: 30px;
+	border-bottom: 1px solid #ddd;
+}
+.list-title h5{
+	font-size: 1em;
+	height: 20px;
+	line-height: 20px;
+}
+.news-list{
+
+}
+.item-ul{
+	margin: 0 20px 0 20px;
+	padding: 0;
+}
+.item-li{
+	display: block;
+	list-style: none;
+	height: 230px;
+	border-bottom: 1px solid #ddd;
+}
+.item-title{
+	text-align: center;
+	/*	height: 28;*/
+	margin-top: 15px;
+	line-height: 1.42858;
+}
+.item-title a{
+	font-size: 1.125em;
+	font-weight: 500;
+	color: #212121;
+	line-height: 1.42858;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.item-describes span{
+	margin-top: 9px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #888;
+	line-height: 1.5;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.item-describes a{
+
+	text-decoration: none !important;
+}
+.item-userbar{
+	margin-top: 10px;
+	line-height: 1.42858;
+	color: #888;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.item-userbar a{
+	color: #666;
+	font-weight: 500;
+}
+.item-userbar .time{
+
+}
+.item-userbar .view{
+	padding-left: 10px;
+}
+/*.box-top{
+	width: 100%;
+	height: inherit;
+}*/
+/*.menu-list-i{
+	padding: 0;
+	width: 100%;
+}
+.menu-list-i li{
+	width: 31%;
+}*/
+/*.menu-item-i{
+	height: 50px;
+}*/
+/*.col-md-right-s-i{
+	height: inherit;
+}*/
+.mac-text-i{
+	font-size: 16px;
+	height: 32px;
+	line-height: 32px;
+}
+

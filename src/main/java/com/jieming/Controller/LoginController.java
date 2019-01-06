@@ -6,6 +6,8 @@ import com.jieming.dao.CartMapper;
 import com.jieming.dao.UserMapper;
 import com.jieming.entity.Product;
 import com.jieming.entity.User;
+import com.jieming.service.CartService;
+import com.jieming.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
@@ -30,6 +32,11 @@ public class LoginController {
     @Autowired
     private CartMapper cartMapper;
 
+    @Autowired
+    private CartService cartService;
+
+    @Autowired
+    private UserService userService;
 
     /*退出登录*/
     @RequestMapping(value = "/logout",method = RequestMethod.POST)
@@ -41,7 +48,7 @@ public class LoginController {
     /*登录*/
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String login(User user, HttpServletRequest request){
-        User user1 = userMapper.getUser(user);
+        User user1 = userService.getUser(user);
         request.getSession().setAttribute("user",user1);
         return "redirect:index.jsp";
     }
@@ -58,7 +65,7 @@ public class LoginController {
             current = 1;
         }
         PageHelper.startPage(current,5);
-        List<Product> cartList = cartMapper.getList(user.getId());
+        List<Product> cartList = cartService.getList(user.getId());
         PageInfo pageInfo = new PageInfo(cartList);
         int pageCount = pageInfo.getPages();
         int next = -1;
@@ -88,7 +95,7 @@ public class LoginController {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
         product.setUserId(user.getId());
-        cartMapper.addProduct(product);
+        cartService.addProduct(product);
         request.setAttribute("product",product);
         return "temp";
     }

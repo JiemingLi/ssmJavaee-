@@ -13,4 +13,5 @@ public interface CartMapper {
     List<Product> getList(Integer userId);
     Product getProduct(Integer id);
     void addProduct(Product addProduct);
+    void delete(Integer id);
 }

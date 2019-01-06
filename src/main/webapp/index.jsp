@@ -174,15 +174,15 @@
     </div>
 
     <%--购物车操作--%>
-   <div>
-     <form action="/postData" method="post">
-       <input type="text" name="id"/>:id<br/>
-       <input type="text" name="name"/>:name<br/>
-       <input type="text" name="price"/>:price<br/>
-       <input type="submit" value="加入购物车"/>
-     </form>
-     <a href="/findAll"><input type="button" value="查询购物车"></a>
-   </div>
+    <div>
+      <form action="/postData" method="post">
+        <input type="text" name="id"/>:id<br/>
+        <input type="text" name="name"/>:name<br/>
+        <input type="text" name="price"/>:price<br/>
+        <input type="submit" value="加入购物车"/>
+      </form>
+      <a href="/findAll"><input type="button" value="查询购物车"></a>
+    </div>
 
     <div>
       <c:if test="${sessionScope.cartList != null}">
@@ -264,19 +264,15 @@
 
 <script type="text/javascript" src="/static/js/jquery-1.4.1.js" ></script>
 <script>
-
     $("#nav-link-shopall").click(function () {
         $("#middle").hide();
         $("#nav-search").hide();
         $(".wrapper").show();
     });
-
     var nowPage;
     var  pageNum;
-
     window.onload = function (ev) {
         nowPage = 1;
-
         $.get("http://localhost:8080/getGoodsPageNum", function (e) {
             pageNum = e;
         });
@@ -286,7 +282,6 @@
             dataType: "JSON",
             success: function (e) {
                 var e = JSON.parse(e);
-
                 for (var i = 0; i < e.length; i++){
                     $("#goods").append(
                         '<li class="item-li"><div class="item-title">\n' +
@@ -304,14 +299,12 @@
                         '</li>'
                     );
                 };
-
                 $("#pageList").append('<a href="javascript:void(0)" onclick="firstPage()">首页</a>\n' +
                     '<a href="javascript:void(0)" onclick="nextPage()">下一页</a>\n' +
                     '<a href="javascript:void(0)" onclick="lastPage()">尾页</a>');
             },
         });
     }
-
     function page(p) {
         $("#goods").empty();
         $("#pageList").empty();
@@ -321,7 +314,6 @@
             dataType: "JSON",
             success: function (e) {
                 var e = JSON.parse(e);
-
                 for (var i = 0; i < e.length; i++){
                     $("#goods").append(
                         '<li class="item-li"><div class="item-title">\n' +
@@ -339,7 +331,6 @@
                         '</li>'
                     );
                 }
-
                 $("#pageList").append('<a href="javascript:void(0)" onclick="firstPage()">首页</a>\n' +
                     '<a href="javascript:void(0)" onclick="nextPage()">下一页</a>\n' +
                     '<a href="javascript:void(0)" onclick="prePage()">上一页</a>\n' +
@@ -347,7 +338,6 @@
             },
         });
     }
-
     function firstPage() {
         page(1);
         nowPage = 1;
@@ -356,29 +346,24 @@
         page(nowPage + 1);
         nowPage++;
     }
-
     function prePage() {
         page(nowPage - 1);
         nowPage--;
     }
-
     function lastPage() {
         page(pageNum);
         nowPage = pageNum;
     }
-
     function getSearch() {
         var searchName = $("#keyword").val();
         $("#goods").empty();
         $("#pageList").empty();
-
         $.ajax({
             url: "http://localhost:8080/searchGoods?name=" + searchName,
             type: "GET",
             dataType: "JSON",
             success: function (e) {
                 var e = JSON.parse(e);
-
                 for (var i = 0; i < e.length; i++){
                     $("#goods").append(
                         '<li class="item-li"><div class="item-title">\n' +
@@ -403,14 +388,11 @@
 
 <script type="text/javascript" src="static/js/jquery-1.4.1.js"></script>
 <script>
-
-
     var a;
     $(function () {
         a = 0;
         setInterval("lb()", 1000);
     });
-
     function lb() {
         $("#p0").css("background", "#ffffff");
         $("#p1").css("background", "#ffffff");
@@ -418,14 +400,12 @@
         $("#p3").css("background", "#ffffff");
         $("#p4").css("background", "#ffffff");
         $("#p5").css("background", "#ffffff");
-
         $("#p" + a % 3).css("background", "#808080");
         $("#p" +((a % 3) + 3) ).css("background", "#808080");
         $("#good0").attr("src", "static/img/good" + (a % 6) + ".png");
         $("#good1").attr("src", "static/img/good" + ((a + 1) % 6) + ".png");
         a++;
     }
-
 </script>
 
 </body>

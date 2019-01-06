@@ -16,4 +16,8 @@
         insert into carts(price,name,userId) values (#{price},#{name},#{userId})
     </insert>
 
+    <delete id="delete" parameterType="Integer">
+        DELETE from carts where id = #{id}
+    </delete>
+
 </mapper>

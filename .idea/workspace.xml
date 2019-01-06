@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6afb4ef-270f-441c-961c-c7882c8808ac" name="Default" comment="add web service layer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jieming/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jieming/service/impl/CartServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,18 +39,6 @@
                 <marker date="1546598210204" expanded="true" signature="10848:10880" ph="..." />
                 <marker date="1546598210204" expanded="true" signature="12371:12403" ph="..." />
                 <marker date="1546598210204" expanded="true" signature="14342:14374" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-              <folding>
-                <marker date="1545810365406" expanded="true" signature="247:329" ph="SELECT * FRO... 1600300218User" />
               </folding>
             </state>
           </provider>
@@ -91,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jieming/service/impl/CartServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="416">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#487#488#0" expanded="true" />
@@ -107,6 +96,18 @@
                 <element signature="e#766#767#0" expanded="true" />
                 <element signature="e#803#804#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="182">
+                <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -189,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CartMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jieming/service/CartService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jieming/service/impl/CartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -296,7 +298,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546778550578" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546778569011" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -553,7 +555,7 @@
       <workItem from="1546561491436" duration="4596000" />
       <workItem from="1546598110172" duration="2178000" />
       <workItem from="1546775216747" duration="644000" />
-      <workItem from="1546776911154" duration="1635000" />
+      <workItem from="1546776911154" duration="1774000" />
     </task>
     <task id="LOCAL-00001" summary="add web service layer">
       <created>1546777313735</created>
@@ -576,17 +578,24 @@
       <option name="project" value="LOCAL" />
       <updated>1546778366211</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add web service layer">
+      <created>1546778560080</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546778560080</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20461000" />
+    <option name="totallyTimeSpent" value="20600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17278618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17278618" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -944,8 +953,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jieming/service/impl/CartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="416">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#487#488#0" expanded="true" />
@@ -957,6 +966,16 @@
             <element signature="e#766#767#0" expanded="true" />
             <element signature="e#803#804#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="182">
+            <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
